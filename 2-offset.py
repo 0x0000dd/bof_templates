@@ -9,6 +9,6 @@ pattern = ""
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect((rhost,rport))
-print "Sending: %s" % str(len(pattern))
+print "Sending: pattern of %s bytes" % str(len(pattern))
 s.send(pattern)
 s.close()
